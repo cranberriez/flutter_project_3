@@ -9,13 +9,15 @@ class BusinessCard extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(height: 25),
-          paddedItem(SizedBox(width: 50, height: 50, child: Placeholder(),)),
+          paddedItem(SizedBox(width: 100, height: 100, child: Image.asset('assets/images/thumbnail_photo.jpg'),)),
           paddedItem(Text("Jacob Vilevac", style: Theme.of(context).textTheme.labelLarge)),
           paddedText("Professional Slacker"),
           paddedText("(915) 867-5309"),
-          paddedItem(Row(children: [
-              Expanded(child: Center(child: Text("github.com/jacob"))),
-              Expanded(child: Center(child: Text("vilevacj@osu.edu"))),
+          paddedItem(Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Center(child: Text("github.com/")),
+              Center(child: Text("vilevacj@osu.edu")),
           ])),
         ],
       ),

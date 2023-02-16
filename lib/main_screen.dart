@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_3/business_card.dart';
 import 'package:flutter_application_3/components/centered_placeholder.dart';
 import 'components/centered_placeholder.dart';
+import 'resume.dart';
+import 'predictor.dart';
+
 
 class MainScreen extends StatelessWidget {
 
@@ -19,16 +22,16 @@ class MainScreen extends StatelessWidget {
           title: Center(child: Text(title)),
           bottom: const TabBar(
             tabs: [
-              Tab(text: "First",),
-              Tab(text: "Second",),
-              Tab(text: "Third",),
+              Tab(text: "Business Card",),
+              Tab(text: "Resume",),
+              Tab(text: "Predictor",),
             ],)
         ),
         body: const TabBarView(
           children: [
             BusinessCard(),
-            Placeholder(),
-            Placeholder(),
+            Resume(),
+            Predictor(),
           ])
       ),
     );
