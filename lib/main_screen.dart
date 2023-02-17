@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_3/business_card.dart';
-import 'package:flutter_application_3/components/centered_placeholder.dart';
-import 'components/centered_placeholder.dart';
 import 'resume.dart';
 import 'predictor.dart';
 
